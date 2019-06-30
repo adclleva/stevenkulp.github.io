@@ -157,9 +157,11 @@ section:last-child {
 
 #about-description {
   padding: 0 5rem;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0 1rem 0;
   text-align: justify;
   font-size: 13pt;
+  opacity: 0.7;
+
 }
 
 .principles {
@@ -188,6 +190,7 @@ section:last-child {
 .principle-item p {
   font-size: 11pt;
   text-align: justify;
+  opacity: 0.5;
 }
 
 .technologies {
@@ -209,6 +212,7 @@ section:last-child {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
+  text-shadow: 1px 1px grey;
   color: #6c63ff;
 }
 
@@ -227,12 +231,16 @@ section:last-child {
 .technologies-list p {
   margin: 5px;
   padding: 4px 14px;
-  font-size: 12pt;
+  font-size: 11pt;
+  font-weight: bold;
   color: black;
+  opacity: 0.7;
 }
 
 .technologies-list i {
   margin-right: 8px;
+  font-size: 14pt;
+  opacity: 0.5;
 }
 
 #resume-button {
@@ -257,6 +265,11 @@ section:last-child {
 /* ------------------------- */
 /*      PROJECTS SECTION     */
 /* ------------------------- */
+
+
+#projects {
+}
+
 
 #projects .container{
   width: 100vw;
@@ -509,30 +522,35 @@ footer p {
 
 
 
-
+.tres {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
 
 
 
 .diamond {
   width: 0;
   height: 0;
-  border: 6px solid transparent;
-  border-bottom-color: black;
+  border: 8px solid transparent;
+  border-bottom-color: rgba(48,19,65,1);
   position: relative;
-  top: -6px;
+  top: -8px;
   justify-content: center;
   text-align: center;
-  margin: 20px auto 20px auto;
+  margin: 20px 6px 20px 6px;
+  opacity: 0.16;
 }
 .diamond:after {
   content: '';
   position: absolute;
-  left: -6px;
-  top: 6px;
+  left: -8px;
+  top: 8px;
   width: 0;
   height: 0;
-  border: 6px solid transparent;
-  border-top-color: black;
+  border: 8px solid transparent;
+  border-top-color: rgba(48,19,65,1);
   justify-content: center;
   text-align: center;
   margin: auto auto auto auto;
@@ -546,7 +564,7 @@ footer p {
 .header-break {
   height: 2px;
   width: 8rem;
-  background: grey;
+  background: #6c63ff;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -554,6 +572,7 @@ footer p {
   align-content: center;
   align-self: center;
 margin: 1rem 0;
+opacity: 0.25;
 }
 
 .header-break-full {
