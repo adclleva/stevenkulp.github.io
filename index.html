@@ -11,16 +11,18 @@
 
 <body>
 
-  <!-- <div id="nav-span">
+  <nav id="nav-span">
     <div id="nav-container">
-      <p id="nametop"><a href="#top" style="color:white;">Steven Kulp</a></p>
-      <ul id="nav-menu">
-        <li class="nav-element"><a href="#about">About</a></li>
-        <li class="nav-element"><a href="#projects">Projects</a></li>
-        <li class="nav-element"><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#top"><h1>Steven Kulp</h1></a>
+      <div class="">
+        <ul>
+          <li class="nav-element"><a href="#about">About</a></li>
+          <li class="nav-element"><a href="#projects">Projects</a></li>
+          <li class="nav-element"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div> -->
+  </nav>
 
   <section id="background">
     <div class="stars"></div>
@@ -33,11 +35,9 @@
       <img id="profile-photo" src="assets/images/profile.jpg">
       <h1>Hi, I'm Steven.</h1>
       <h3>I'm a Full-Stack Web Developer in San Diego, California.</h3>
-      <!-- <a href="#about">
-        <img id="landing-arrow" src="assets/icons/chevron.png">
-      </a> -->
       <a href="#about">
-        <span id="landing-arrow" class="demo"></span>
+        <span id="landing-arrow"></span>
+        <span id="landing-arrow-circle"></span>
       </a>
     </div>
   </section>
@@ -47,7 +47,7 @@
       <h1>About</h1>
       <div class="header-break"></div>
       <p id="about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="tres">
+      <div class="diamond-container">
         <div class="diamond"></div>
         <div class="diamond"></div>
         <div class="diamond"></div>
@@ -71,7 +71,7 @@
         </div>
       </div>
       <!-- <div class="header-break-full-about"></div> -->
-      <div class="tres">
+      <div class="diamond-container">
         <div class="diamond"></div>
       </div>
 
@@ -92,8 +92,16 @@
         </div>
       </div>
 
+      <!-- <div class="technologies">
+        <h4>Education</h4>
+        <div class="technologies-list">
+          <p>Bachelor's, Psychology and Graphic Design</p>
+          <p>Graduate, LEARN Academy Coding School</p>
+        </div>
+      </div> -->
+
       <a id="resume-button" href="assets/docs/StevenKulp-Resume.pdf" target="_blank">
-        <p>View Resume (PDF)</p>
+        <p>View Resume</p>
       </a>
     </div>
   </section>

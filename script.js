@@ -5,7 +5,7 @@ window.onscroll = function() {
 function navDisplay() {
   const browserHeight = window.innerHeight;
   const scrollHeight = document.documentElement.scrollTop;
-  if (scrollHeight + 54 >= browserHeight) {
+  if (scrollHeight + 200 >= browserHeight) {
     document.getElementById("nav-span").style.top = "0px";
   } else {
     document.getElementById("nav-span").style.top = "-200px";
