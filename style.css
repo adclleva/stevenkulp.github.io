@@ -26,18 +26,11 @@ body {
   background-size: cover;
 }
 
-hr {
-  /* width: 12rem; */
-  text-align: center;
-  justify-content: center;
-}
-
 h1 {
   font-size: 5rem;
 }
 
 h3 {
-
 }
 
 p {
@@ -315,15 +308,15 @@ section:last-child {
 .project-links-container {
   flex-direction: row;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 
 .project-links-container p {
   margin-top: 1rem;
   padding: 12px 20px;
-  background-color: #3e3d56;
-  color: white;
+  /* background-color: #3e3d56; */
+  color: black;
   border-radius: 4px;
 }
 
