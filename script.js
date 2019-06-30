@@ -33,7 +33,7 @@ function circleSize() {
 
 function drawCircles(event) {
   let circle = document.createElement('div'); // Creates a new <div> element
-  circle.setAttribute('id', 'circle'); // Assigns the CSS 'circle' id attributes to the new <div> element
+  circle.setAttribute('id', 'mouse-draw'); // Assigns the CSS 'circle' id attributes to the new <div> element
   document.getElementById("background").appendChild(circle); // Adds the new <div> element to the body of the HTML
   circle.style.left = event.clientX + 'px'; // Sets the X-axis value of the <div> as equal to the X-axis value of the mouse's position
   circle.style.top = (event.clientY ) + 'px'; // Sets the Y-axis value of the <div> as equal to the Y-axis value of the mouse's position
