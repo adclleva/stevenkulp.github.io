@@ -70,6 +70,6 @@
   transform: translateX(-800px) translateY(-800px);
   }
   to {
-  transform: translateX(-1400px) translateY(-2400px) ;
+  transform: translateX(-1400px) translateY(-2200px) ;
   }
 }
