@@ -15,7 +15,7 @@
       <a href="#top"><h1>Steven Kulp</h1></a>
       <div>
         <ul>
-          <li class="nav-element"><a class="anchor" href="#about">About</a></li>
+          <li class="nav-element"><a class="anchor" href="#about">About Me</a></li>
           <li class="nav-element"><a class="anchor" href="#projects">Projects</a></li>
           <li class="nav-element"><a class="anchor" href="#contact">Contact</a></li>
         </ul>
@@ -34,7 +34,7 @@
       <img id="profile-photo" src="assets/images/profile.jpg">
       <h1>Hi, I'm Steven.</h1>
       <h3>I'm a Full-Stack Web Developer in San Diego, California.</h3>
-      <a href="#about" class="anchor">
+      <a class="anchor" href="#about">
         <span id="landing-arrow"></span>
         <span id="landing-arrow-circle"></span>
       </a>
@@ -43,16 +43,16 @@
 
   <section id="about">
     <div class="container">
-      <h1>About</h1>
+      <h1>About Me</h1>
 
-      <div class="header-break"></div>
+      <span class="header-break"></span>
 
       <p id="about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
       <div class="diamond-container">
-        <div class="diamond"></div>
-        <div class="diamond"></div>
-        <div class="diamond"></div>
+        <span class="diamond"></span>
+        <span class="diamond"></span>
+        <span class="diamond"></span>
       </div>
 
       <div class="principles">
@@ -73,11 +73,10 @@
           <h3>Engineering</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
-
       </div>
-      <!-- <div class="header-break-full-about"></div> -->
+
       <div class="diamond-container">
-        <div class="diamond"></div>
+        <span class="diamond"></span>
       </div>
 
       <div class="technologies">
@@ -109,11 +108,13 @@
     </div>
   </section>
 
+  <div id="separator"><span class="header-break"></span></div>
+
 
   <section id="projects">
     <div class="container">
       <h1>Projects</h1>
-      <div class="header-break"></div>
+      <span class="header-break"></span>
       <p id="projects-description">Here is some of my work. For more details on a project, click the Github link.</p>
       <div class="projects-list">
         <div class="project-card">
@@ -121,7 +122,7 @@
           <div class="project-text-container">
             <h4>ToolShare</h4>
             <p>A full-stack web application that acts as a neighborhood tool listing service. Features include authentication, database models, external API integration, form validations, direct messaging, and more.</p>
-            <div class="header-break-full"></div>
+            <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://hidden-tundra-14844.herokuapp.com/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/ToolShare" target="_blank"><p>Github</p></a>
@@ -140,7 +141,7 @@
           <div class="project-text-container">
             <h4>PermitDocs Extension</h4>
             <p>A Chrome browser extension that displays a list of any addresses detected on a webpage. Clicking an address performs a PermitDocs search for that address.</p>
-            <div class="header-break-full"></div>
+            <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://github.com/stevenkulp/PermitDocs" target="_blank"><p>Github</p></a>
               <!-- <i class="devicon-html5-plain" title="HTML5"></i>
@@ -157,7 +158,7 @@
           <div class="project-text-container">
             <h4>Star Collector</h4>
             <p>Collect all five stars before your energy bar depletes! Stars give a small energy boost; black holes will drain energy based on their size.</p>
-            <div class="header-break-full"></div>
+            <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/StarCollector/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/StarCollector" target="_blank"><p>Github</p></a>
@@ -173,8 +174,8 @@
           <img src="assets/images/pong.png" alt="">
           <div class="project-text-container">
             <h4>Pong</h4>
-            <p>A remake of Pong, using HTML canvas methods and Javascript. As the game progresses, the paddles get smaller and the ball moves faster, so try and keep up!</p>
-            <div class="header-break-full"></div>
+            <p>A remake of Pong, using HTML canvas methods and Javascript. As the game progresses, the paddles get smaller and the ball moves faster.</p>
+            <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/Pong/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/Pong" target="_blank"><p>Github</p></a>
@@ -190,7 +191,7 @@
           <div class="project-text-container">
             <h4>Pig Latin Translator</h4>
             <p>A Javascript program that translates English to Pig Latin. Includes logic to handle full sentences, capitalization, punctuation, and more.</p>
-            <div class="header-break-full"></div>
+            <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/PigLatinTranslator/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/PigLatinTranslator" target="_blank"><p>Github</p></a>
@@ -206,7 +207,7 @@
           <div class="project-text-container">
             <h4>Tic Tac Toe</h4>
             <p>The classic game built using React.</p>
-            <div class="header-break-full"></div>
+            <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/TicTacToe/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/TicTacToe" target="_blank"><p>Github</p></a>
@@ -225,7 +226,7 @@
   <section id="contact">
     <div class="contact-wrapper">
       <h1>Contact</h1>
-      <div class="header-break"></div>
+      <span class="header-break"></span>
       <p id="contact-description">Want to get in touch? Feel free to reach out via your preferred method below.</p>
 
       <div class="contact-links">
@@ -235,7 +236,7 @@
         <a href="https://github.com/stevenkulp" target="_blank"><p class="contact-button">Github</p></a>
       </div>
 
-      <div class="header-break-full"></div>
+      <span class="header-break-full"></span>
 
       <form id="submission-form" action="">
         <div id="input-name-email-container">
