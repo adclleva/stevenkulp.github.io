@@ -108,8 +108,9 @@
     </div>
   </section>
 
-  <div id="separator"><span class="header-break"></span></div>
-
+  <!-- <div class="separator">
+    <span class="header-break-section"></span>
+  </div> -->
 
   <section id="projects">
     <div class="container">
@@ -190,7 +191,7 @@
           <img src="assets/images/piglatin.png" alt="">
           <div class="project-text-container">
             <h4>Pig Latin Translator</h4>
-            <p>A Javascript program that translates English to Pig Latin. Includes logic to handle full sentences, capitalization, punctuation, and more.</p>
+            <p>Translate English to Pig Latin. Handles phrases, capitalization, punctuation, and more.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/PigLatinTranslator/" target="_blank"><p>Demo</p></a>
@@ -227,7 +228,7 @@
     <div class="contact-wrapper">
       <h1>Contact</h1>
       <span class="header-break"></span>
-      <p id="contact-description">Want to get in touch? Feel free to reach out via your preferred method below.</p>
+      <p id="contact-description">Want to get in touch? Feel free to reach out using a method below.</p>
 
       <div class="contact-links">
         <a href="mailto:sdkulp@gmail.com"><p class="contact-button">Email</p></a>
@@ -238,12 +239,12 @@
 
       <span class="header-break-full"></span>
 
-      <form id="submission-form" action="">
+      <form id="submission-form" action="https://formspree.io/sdkulp@gmail.com" method="POST">
         <div id="input-name-email-container">
-          <input type="text" id="input-name" name="fullname" placeholder="Name" required>
-          <input type="text" id="input-email" name="email" placeholder="Email" required>
+          <input type="text" id="input-name" name="Name" placeholder="Name" required>
+          <input type="text" id="input-email" name="Email" placeholder="Email" required>
         </div>
-        <textarea id="subject" name="subject" placeholder="Message" required></textarea>
+        <textarea id="message" name="Message" placeholder="Message" required></textarea>
         <input type="submit" value="Submit">
       </form>
 

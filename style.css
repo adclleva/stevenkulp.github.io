@@ -64,15 +64,15 @@ section:last-child {
 }
 
 .container {
-  height: auto;
-  margin: -2rem auto -2rem auto;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  height: auto;
+  margin: -2rem auto -2rem auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2rem;
 }
 
 .diamond-container {
@@ -108,7 +108,7 @@ section:last-child {
   margin: auto auto auto auto;
 }
 
-.header-break, .header-break-full, .header-break-project-card {
+.header-break, .header-break-full, .header-break-project-card, .header-break-section {
   display: flex;
   align-self: center;
   height: 2px;
@@ -117,8 +117,19 @@ section:last-child {
   background: #000;
 }
 
+/* #separator {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
 
-
+.header-break-section {
+  width: 70rem;
+  background: #fff;
+} */
 
 
 /* ------------------------- */
@@ -139,7 +150,7 @@ section:last-child {
   text-decoration: none;
   transition: top 0.2s;
   color: white;
-  height: 4rem;
+  height: 4.5rem;
 }
 
 #nav-container {
@@ -276,8 +287,8 @@ a #landing-arrow  {
 
 a #landing-arrow:hover {
   transition: 0.25s ease-in-out;
-  border-left: 4px solid #AED6F1;
-  border-bottom: 4px solid #AED6F1;
+  border-left: 4px solid #6c63ff;
+  border-bottom: 4px solid #6c63ff;
 }
 
 
@@ -288,8 +299,8 @@ a #landing-arrow:hover {
   20% {
     -webkit-transform: rotate(-45deg) translate(-8px, 8px);
     transition: 2.5s ease-in-out;
-    border-left: 4px solid #fff;
-    border-bottom: 4px solid #fff;
+    border-left: 4px solid #6c63ff;
+    border-bottom: 4px solid #6c63ff;
   }
   40% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -302,8 +313,8 @@ a #landing-arrow:hover {
   20% {
     transform: rotate(-45deg) translate(-8px, 8px);
     transition-timing-function: 2.5s ease-in-out;
-    border-left: 4px solid #fff;
-    border-bottom: 4px solid #fff;
+    border-left: 4px solid #6c63ff;
+    border-bottom: 4px solid #6c63ff;
   }
   40% {
     transform: rotate(-45deg) translate(0, 0);
@@ -311,7 +322,7 @@ a #landing-arrow:hover {
 }
 
 
-/* a #landing-arrow-circle  {
+a #landing-arrow-circle  {
   position: absolute;
   left: 50%;
   width: 2rem;
@@ -353,7 +364,7 @@ a #landing-arrow:hover {
   100% {
     opacity: 0;
   }
-} */
+}
 
 
 
@@ -624,7 +635,7 @@ a #landing-arrow:hover {
 }
 
 #contact-description {
-  font-size: 11pt;
+  font-size: 12pt;
   margin-top: 1rem;
 }
 
