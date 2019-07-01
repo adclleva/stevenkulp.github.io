@@ -229,6 +229,42 @@ section:last-child {
   letter-spacing: 1.8px;
 }
 
+#nav-menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 58rem) {
+  #nav-span {
+    height: 6rem;
+    margin: auto;
+  }
+  #nav-container {
+    width: 100vw;
+    height: 6rem;
+    margin: 0 4rem;
+  }
+
+  #nav-menu-items {
+    display: none;
+  }
+  #nav-span h1 {
+    /* margin-left: 4rem; */
+    font-size: 16pt;
+  }
+
+  #nav-menu-mobile {
+
+  }
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -239,8 +275,8 @@ section:last-child {
 #background {
   position: fixed;
   z-index: 1;
-  margin: auto;
 }
+
 
 #mouse-draw {
   width: 5px;
@@ -615,7 +651,6 @@ a #landing-arrow  {
   background: transparent;
   background-size: 100vw;
   margin: -7.5rem auto -2rem auto;
-  transform: translateZ(10rem);
 }
 
 #projects h1 {
@@ -663,7 +698,6 @@ a #landing-arrow  {
 #projects img {
   width: 400px;
   height: auto;
-  background: pink;
 }
 
 #projects h4 {
@@ -715,6 +749,64 @@ a #landing-arrow  {
   opacity: 0.55;
 }
 
+@media only screen and (max-width: 58rem) {
+  #projects .container{
+    margin: auto;
+  }
+
+  #projects-description {
+    font-size: 16pt;
+  }
+  .project-card {
+    margin: 5rem;
+    width: 85vw;
+  }
+
+  #projects img {
+    width: 85vw;
+    height: auto;
+  }
+
+  .project-text-container {
+    border-top: 4px solid #000;
+    width: 85vw;
+  }
+
+  #projects h4 {
+    font-size: 32pt;
+  }
+
+  #projects p {
+    font-size: 16pt;
+  }
+
+  #projects .header-break-project-card {
+    margin-top: 2rem;
+  }
+
+
+  .project-links-container {
+    text-align: center;
+    justify-content: space-between;
+  }
+
+
+
+  .project-links-container p:last-child {
+    margin-right: 0rem;
+  }
+
+  .project-links-container p {
+    width: 36vw;
+
+  }
+  .project-links-container #permitdocs  {
+    /* width: 77vw; */
+  }
+  .project-links-container i {
+    display: none;
+  }
+}
 
 
 
@@ -732,6 +824,14 @@ a #landing-arrow  {
   padding: 2rem 3rem 3rem 3rem;
   background-color: #f2f2f2;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 58rem) {
+  .contact-wrapper {
+    min-width: 100vw;
+    border-radius: 0px;
+  }
+
 }
 
 

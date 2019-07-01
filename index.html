@@ -13,12 +13,14 @@
   <nav id="nav-span">
     <div id="nav-container">
       <a href="#top"><h1>Steven Kulp</h1></a>
-      <div>
+      <div id="nav-menu-items">
         <ul>
           <li class="nav-element"><a class="anchor" href="#about">About Me</a></li>
           <li class="nav-element"><a class="anchor" href="#projects">Projects</a></li>
           <li class="nav-element"><a class="anchor" href="#contact">Contact</a></li>
         </ul>
+      </div>
+      <div id="nav-menu-mobile">
       </div>
     </div>
   </nav>
@@ -152,7 +154,7 @@
             <p>A Chrome browser extension that displays a list of any addresses detected on a webpage. Clicking an address performs a PermitDocs search for that address.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
-              <a href="https://github.com/stevenkulp/PermitDocs" target="_blank"><p>Github</p></a>
+              <a href="https://github.com/stevenkulp/PermitDocs" target="_blank"><p id="permitdocs">Github</p></a>
               <!-- <i class="devicon-html5-plain" title="HTML5"></i>
               <i class="devicon-css3-plain" title="CSS3"></i> -->
               <i class="devicon-python-plain" title="Python"></i>
@@ -264,5 +266,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
