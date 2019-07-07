@@ -13,17 +13,33 @@
   <nav id="nav-span">
     <div id="nav-container">
       <a href="#top"><h1>Steven Kulp</h1></a>
-      <div id="nav-menu-items">
+      <div class="nav-menu-desktop">
         <ul>
           <li class="nav-element"><a class="anchor" href="#about">About Me</a></li>
           <li class="nav-element"><a class="anchor" href="#projects">Projects</a></li>
           <li class="nav-element"><a class="anchor" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div id="nav-menu-mobile">
+      <div class="nav-menu-mobile">
+        <input type="checkbox" id="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li class="nav-element"><a class="anchor" href="#about" onclick="close()">About Me</a></li>
+                <li class="nav-element"><a class="anchor" href="#projects" onclick="close()">Projects</a></li>
+                <li class="nav-element"><a class="anchor" href="#contact" onclick="close()">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
+
+
+
 
   <section id="background">
     <div class="stars"></div>
@@ -58,30 +74,34 @@
       </div>
 
       <div class="principles">
-        <div class="principle-item">
-          <img src="assets/icons/timeline.svg" alt="">
-          <h3>User Mapping</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
 
-        <div class="diamond-container">
-          <span class="diamond diamond-mobile"></span>
-        </div>
+
+
 
         <div class="principle-item">
-          <img src="assets/icons/art.svg" alt="">
-          <h3>Visual Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-
-        <div class="diamond-container">
-          <span class="diamond diamond-mobile"></span>
-        </div>
-
-        <div class="principle-item">
-          <img src="assets/icons/code.svg" alt="">
+          <img src="assets/icons/engineering.svg" alt="">
           <h3>Engineering</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>With a solid understanding of computer science and several programming languages, I build applications with thoughtful planning, critical thinking, and quality testing. I aim to produce code that is clear, concise, and follows best practices and conventions.</p>
+        </div>
+
+        <div class="diamond-container">
+          <span class="diamond diamond-mobile"></span>
+        </div>
+
+        <div class="principle-item">
+          <img src="assets/icons/user-experience.svg" alt="">
+          <h3>User Experience</h3>
+          <p>Considering and understanding the end user through methodical UX practices is a crucial aspect of strong application design. I ensure this through user mapping, product wireframing, communicating effectively, and by adhering to ADA accessibility guidelines as much as possible.</p>
+        </div>
+
+                <div class="diamond-container">
+                  <span class="diamond diamond-mobile"></span>
+                </div>
+
+        <div class="principle-item">
+          <img src="assets/icons/visual-design.svg" alt="">
+          <h3>Visual Design</h3>
+          <p>Designs and interfaces that are intuitive, aesthetically pleasing, and responsive to a variety of desktop, tablet, and mobile devices.</p>
         </div>
       </div>
 
@@ -106,13 +126,13 @@
         </div>
       </div>
 
-      <!-- <div class="technologies">
+      <div class="technologies">
         <h4>Education</h4>
         <div class="technologies-list">
           <p>Bachelor's, Psychology and Graphic Design</p>
           <p>Graduate, LEARN Academy Coding School</p>
         </div>
-      </div> -->
+      </div>
 
       <a id="resume-button" href="assets/docs/StevenKulp-Resume.pdf" target="_blank"><p>View Resume</p></a>
     </div>
@@ -129,10 +149,12 @@
       <p id="projects-description">Here is some of my work. For more details on a project, click the Github link.</p>
       <div class="projects-list">
         <div class="project-card">
-          <img src="assets/images/toolshare.png" alt="">
+          <a href="https://hidden-tundra-14844.herokuapp.com/" target="_blank">
+            <img src="assets/images/toolshare.png" alt="">
+          </a>
           <div class="project-text-container">
-            <h4>ToolShare</h4>
-            <p class="project-description">A full-stack web application that acts as a neighborhood tool listing service. Features include authentication, database models, external API integration, form validations, direct messaging, and more.</p>
+            <a href="https://hidden-tundra-14844.herokuapp.com/" target="_blank"><h4>ToolShare</h4></a>
+            <p class="project-description">A full-stack web application that acts as a neighborhood tool listing service. Features include authentication, database models, external API integration, direct messaging, and more.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://hidden-tundra-14844.herokuapp.com/" target="_blank"><p>Demo</p></a>
@@ -148,13 +170,15 @@
         </div>
 
         <div class="project-card">
-          <img src="assets/images/permitdocs.png" alt="">
+          <a href="https://github.com/stevenkulp/PermitDocs" target="_blank">
+            <img src="assets/images/permitdocs.png" alt="">
+          </a>
           <div class="project-text-container">
-            <h4>PermitDocs Extension</h4>
+            <a href="https://github.com/stevenkulp/PermitDocs" target="_blank"><h4>PermitDocs Extension</h4></a>
             <p class="project-description">A Chrome browser extension that displays a list of any addresses detected on a webpage. Clicking an address performs a PermitDocs search for that address.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
-              <!-- <a href="https://github.com/stevenkulp/PermitDocs" target="_blank"><p id="permitdocs">Github</p></a> -->
+              <a href="https://github.com/stevenkulp/PermitDocs" target="_blank"><p id="permitdocs">Github</p></a>
               <!-- <i class="devicon-html5-plain" title="HTML5"></i>
               <i class="devicon-css3-plain" title="CSS3"></i> -->
               <i class="devicon-python-plain" title="Python"></i>
@@ -165,9 +189,11 @@
         </div>
 
         <div class="project-card">
-          <img src="assets/images/starcollector.png" alt="">
+          <a href="https://stevenkulp.github.io/StarCollector/" target="_blank">
+            <img src="assets/images/starcollector.png" alt="">
+          </a>
           <div class="project-text-container">
-            <h4>Star Collector</h4>
+            <a href="https://stevenkulp.github.io/StarCollector/" target="_blank"><h4>Star Collector</h4></a>
             <p class="project-description">Collect all five stars before your energy bar depletes! Stars give a small energy boost; black holes will drain energy based on their size.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
@@ -182,9 +208,11 @@
         </div>
 
         <div class="project-card">
-          <img src="assets/images/pong.png" alt="">
+          <a href="https://stevenkulp.github.io/Pong/" target="_blank">
+            <img src="assets/images/pong.png" alt="">
+          </a>
           <div class="project-text-container">
-            <h4>Pong</h4>
+            <a href="https://stevenkulp.github.io/Pong/" target="_blank"><h4>Pong</h4></a>
             <p class="project-description">A remake of Pong, using HTML canvas methods and Javascript. As the game progresses, the paddles get smaller and the ball moves faster.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
@@ -198,9 +226,11 @@
         </div>
 
         <div class="project-card">
-          <img src="assets/images/piglatin.png" alt="">
+          <a href="https://stevenkulp.github.io/PigLatinTranslator/" target="_blank">
+            <img src="assets/images/piglatin.png" alt="">
+          </a>
           <div class="project-text-container">
-            <h4>Pig Latin Translator</h4>
+            <a href="https://stevenkulp.github.io/PigLatinTranslator/" target="_blank"><h4>Pig Latin Translator</h4></a>
             <p class="project-description">Translate English to Pig Latin. Handles phrases, capitalization, punctuation, and more.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
@@ -214,9 +244,11 @@
         </div>
 
         <div class="project-card">
-          <img src="assets/images/tictactoe.png" alt="">
+          <a href="https://stevenkulp.github.io/TicTacToe/" target="_blank">
+            <img src="assets/images/tictactoe.png" alt="">
+          </a>
           <div class="project-text-container">
-            <h4>Tic Tac Toe</h4>
+            <a href="https://stevenkulp.github.io/TicTacToe/" target="_blank"><h4>Tic Tac Toe</h4></a>
             <p class="project-description">The classic game built using React.</p>
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
@@ -226,6 +258,24 @@
               <i class="devicon-css3-plain" title="CSS3"></i> -->
               <i class="devicon-javascript-plain" title="Javascript"></i>
               <i class="devicon-react-original" title="React"></i>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-card">
+          <a href="" target="_blank">
+            <img src="" alt="">
+          </a>
+          <div class="project-text-container">
+            <a href="" target="_blank"><h4>Portfolio</h4></a>
+            <p class="project-description">I wanted to challenge myself by creating a portfolio from scratch, and by limiting this project to HTML, CSS, and vanilla Javascript only. No templates, libraries, or frameworks were involved.</p>
+            <span class="header-break-project-card"></span>
+            <div class="project-links-container">
+              <a href="" target="_blank"><p>Github</p></a>
+              <!-- <i class="devicon-html5-plain" title="HTML5"></i>
+              <i class="devicon-css3-plain" title="CSS3"></i> -->
+              <i class="devicon-javascript-plain" title="Javascript"></i>
             </div>
           </div>
         </div>
