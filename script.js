@@ -5,7 +5,12 @@ function navDisplay() { // Determines when navigation bar is visible
     document.getElementById("nav-span").style.top = "0px"; // Set position of navigation bar to the top of the browser window (visible)
   } else { // If user has not scrolled beyond the height of their browser...
     document.getElementById("nav-span").style.top = "-200px"; // Set position of navigation bar outside of browser window (not visible)
+    document.getElementById("toggler").checked = false;
   }
+}
+
+function uncheck() {
+    document.getElementById("toggler").checked = false;
 }
 
 function circleColor() { // Set color of circle
