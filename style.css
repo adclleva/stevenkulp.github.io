@@ -392,7 +392,6 @@ section:last-child {
   .nav-menu-mobile .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 1.5rem;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -430,7 +429,7 @@ section:last-child {
   height: 5px;
   border-radius: 100px;
   position: absolute;
-  opacity: 0.15;
+  opacity: 0.2;
 }
 
 
@@ -688,11 +687,18 @@ a #landing-arrow  {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 75%;
+  width: 78%;
   margin: auto;
   padding: 1.5rem 1rem 1rem 1rem;
   border: 1px solid lightgrey;
   border-radius: 5px;
+}
+
+.technologies-list img {
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .technologies-list p {
@@ -869,10 +875,14 @@ a #landing-arrow  {
 
 #projects img {
   width: 400px;
-  height: auto;
+  height: 290px;
   border-radius: 5px 5px 0 0;
+  margin-bottom: -1rem;
 }
 
+/* #projects #permitdocs-img img {
+  height: 270px;
+} */
 #projects h4 {
   font-size: 24pt;
   /* text-shadow: 1px 1px grey; */
