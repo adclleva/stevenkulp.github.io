@@ -68,8 +68,7 @@
 
       <span class="header-break"></span>
 
-      <p id="about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+      <p id="about-description">Hi there! As you may have guessed, my name is Steven and I'm a Full-Stack Web Developer. I've always found joy in creating, building, and figuring out how things work. So it was almost inevitable that I'd end up in the world of Web Development eventually. I'm always up for a new challenge, and I'm also easily adaptable as well as a quick learner. There are three core tenets that I place importance upon:</p>
       <div class="diamond-container">
         <span class="diamond"></span>
         <span class="diamond"></span>
@@ -104,28 +103,42 @@
         <div class="principle-item">
           <img src="assets/icons/visual-design.svg" alt="">
           <h3>Visual Design</h3>
-          <p>Designs and interfaces that are intuitive, aesthetically pleasing, and responsive to a variety of desktop, tablet, and mobile devices.</p>
+          <p>Designs and interfaces that are intuitive, responsive, and aesthetically pleasing. Content that has proper structure, hierarchy, and consistency.</p>
         </div>
       </div>
 
-      <div class="diamond-container">
+      <!-- <div class="diamond-container">
         <span class="diamond"></span>
-      </div>
+      </div> -->
 
       <div class="technologies">
-        <h4>Technical Skills</h4>
+        <h4>Languages</h4>
         <div class="technologies-list">
-          <p><i class="devicon-html5-plain"></i>HTML5</p>
-          <p><i class="devicon-css3-plain"></i>CSS3</p>
-          <p><i class="devicon-python-plain"></i>Python</p>
-          <p><i class="devicon-javascript-plain"></i>Javascript</p>
-          <p><i class="devicon-react-original"></i>React</p>
-          <p><i class="devicon-jquery-plain"></i>jQuery</p>
-          <p><i class="devicon-ruby-plain"></i>Ruby</p>
-          <p><i class="devicon-rails-plain"></i>Ruby on Rails</p>
-          <p><i class="devicon-photoshop-plain"></i>Photoshop</p>
-          <p><i class="devicon-illustrator-plain"></i>Illustrator</p>
-          <p><i class="devicon-github-plain"></i>Github</p>
+            <p><i class="devicon-html5-plain"></i>HTML5</p>
+            <p><i class="devicon-css3-plain"></i>CSS3</p>
+            <p><i class="devicon-javascript-plain"></i>Javascript</p>
+            <p><i class="devicon-python-plain"></i>Python</p>
+            <p><i class="devicon-ruby-plain"></i>Ruby</p>
+            <p><i class="devicon-postgresql-plain"></i>PostgreSQL</p>
+        </div>
+      </div>
+      <div class="technologies-divider">
+        <div class="technologies">
+          <h4>Frameworks</h4>
+          <div class="technologies-list-half">
+            <p><i class="devicon-react-original"></i>React</p>
+            <p><i class="devicon-rails-plain"></i>Ruby on Rails</p>
+          </div>
+        </div>
+        <div class="diamond-container">
+          <span class="diamond" id="technologies-diamond"></span>
+        </div>
+        <div class="technologies">
+          <h4>Design Tools</h4>
+          <div class="technologies-list-half">
+            <p><i class="devicon-photoshop-plain"></i>Photoshop</p>
+            <p><i class="devicon-illustrator-plain"></i>Illustrator</p>
+          </div>
         </div>
       </div>
 
@@ -153,21 +166,25 @@
       <div class="projects-list">
         <div class="project-card">
           <a href="https://hidden-tundra-14844.herokuapp.com/" target="_blank">
-            <img src="assets/images/toolshare.png" alt="">
+            <img src="assets/images/toolshare.gif" alt="">
           </a>
           <div class="project-text-container">
             <a href="https://hidden-tundra-14844.herokuapp.com/" target="_blank"><h4>ToolShare</h4></a>
-            <p class="project-description">A full-stack web application that acts as a neighborhood tool listing service. Features include authentication, database models, external API integration, direct messaging, and more.</p>
+            <p class="project-description">This full-stack web application is a listing service for tool rentals within a local community. Includes authentication, database models, external APIs, direct messaging, and more.</p>
+            <!-- <div class="project-tech-container">
+              <p>Technologies Used:
+              <img src="assets/icons/html5.svg" title="HTML5"/>
+              <img src="assets/icons/css3.svg" title="CSS3"/>
+              <img src="assets/icons/javascript.svg" title="Javascript"/>
+              <img src="assets/icons/react.svg" title="React"/>
+              <img src="assets/icons/ruby.svg" title="Ruby"/>
+              <img src="assets/icons/rails.svg" title="Ruby on Rails"/>
+              </p>
+            </div> -->
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://hidden-tundra-14844.herokuapp.com/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/ToolShare" target="_blank"><p>Github</p></a>
-              <!-- <i class="devicon-html5-plain" title="HTML5"></i>
-              <i class="devicon-css3-plain" title="CSS3"></i> -->
-              <i class="devicon-javascript-plain" title="Javascript"></i>
-              <i class="devicon-react-original" title="React"></i>
-              <i class="devicon-ruby-plain" title="Ruby"></i>
-              <i class="devicon-rails-plain" title="Ruby on Rails"></i>
             </div>
           </div>
         </div>
@@ -177,16 +194,20 @@
             <img src="assets/images/permitdocs.gif" alt="">
           </a>
           <div class="project-text-container">
-            <a href="https://github.com/stevenkulp/PermitDocsExtension" target="_blank"><h4>PermitDocs Extension</h4></a>
-            <p class="project-description">A Chrome browser extension that displays a list of any addresses detected on a webpage. Clicking an address performs a PermitDocs search for that address.</p>
+            <a href="https://github.com/stevenkulp/PermitDocsExtension" target="_blank"><h4>Browser Extension</h4></a>
+            <p class="project-description">Completed as an internship project, this Chrome browser extension displays a list of any addresses detected on a webpage. Clicking an address performs a search for that address.</p>
+            <!-- <div class="project-tech-container">
+              <p>Technologies Used:
+                <i class="devicon-html5-plain" title="HTML5"></i>
+                <i class="devicon-css3-plain" title="CSS3"></i>
+                <i class="devicon-python-plain" title="Python"></i>
+                <i class="devicon-javascript-plain" title="Javascript"></i>
+                <i class="devicon-chrome-plain" title="Chrome"></i>
+              </p>
+            </div> -->
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://github.com/stevenkulp/PermitDocsExtension" target="_blank"><p id="permitdocs">Github</p></a>
-              <!-- <i class="devicon-html5-plain" title="HTML5"></i>
-              <i class="devicon-css3-plain" title="CSS3"></i> -->
-              <i class="devicon-python-plain" title="Python"></i>
-              <i class="devicon-javascript-plain" title="Javascript"></i>
-              <i class="devicon-chrome-plain" title="Chrome"></i>
             </div>
           </div>
         </div>
@@ -198,32 +219,18 @@
           <div class="project-text-container">
             <a href="https://stevenkulp.github.io/StarCollector/" target="_blank"><h4>Star Collector</h4></a>
             <p class="project-description">Collect all five stars before your energy bar depletes! Stars give a small energy boost; black holes will drain energy based on their size.</p>
+            <!-- <div class="project-tech-container">
+              <p>Technologies Used:
+                <i class="devicon-html5-plain" title="HTML5"></i>
+                <i class="devicon-css3-plain" title="CSS3"></i>
+                <i class="devicon-javascript-plain" title="Javascript"></i>
+                <i class="devicon-react-original" title="React"></i>
+              </p>
+            </div> -->
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/StarCollector/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/StarCollector" target="_blank"><p>Github</p></a>
-              <!-- <i class="devicon-html5-plain" title="HTML5"></i>
-              <i class="devicon-css3-plain" title="CSS3"></i> -->
-              <i class="devicon-javascript-plain" title="Javascript"></i>
-              <i class="devicon-react-original" title="React"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <a href="https://stevenkulp.github.io/Pong/" target="_blank">
-            <img src="assets/images/pong2.gif" alt="">
-          </a>
-          <div class="project-text-container">
-            <a href="https://stevenkulp.github.io/Pong/" target="_blank"><h4>Pong</h4></a>
-            <p class="project-description">A remake of Pong, using HTML canvas methods and Javascript. As the game progresses, the paddles get smaller and the ball moves faster.</p>
-            <span class="header-break-project-card"></span>
-            <div class="project-links-container">
-              <a href="https://stevenkulp.github.io/Pong/" target="_blank"><p>Demo</p></a>
-              <a href="https://github.com/stevenkulp/Pong" target="_blank"><p>Github</p></a>
-              <i class="devicon-html5-plain" title="HTML5"></i>
-              <!-- <i class="devicon-css3-plain" title="CSS3"></i> -->
-              <i class="devicon-javascript-plain" title="Javascript"></i>
             </div>
           </div>
         </div>
@@ -235,32 +242,60 @@
           <div class="project-text-container">
             <a href="https://stevenkulp.github.io/PigLatinTranslator/" target="_blank"><h4>Pig Latin Translator</h4></a>
             <p class="project-description">Translate English to Pig Latin. Handles phrases, capitalization, punctuation, and more.</p>
+            <!-- <div class="project-tech-container">
+              <p>Technologies Used:
+                <i class="devicon-html5-plain" title="HTML5"></i>
+                <i class="devicon-css3-plain" title="CSS3"></i>
+                <i class="devicon-javascript-plain" title="Javascript"></i>
+              </p>
+            </div> -->
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/PigLatinTranslator/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/PigLatinTranslator" target="_blank"><p>Github</p></a>
-              <!-- <i class="devicon-html5-plain" title="HTML5"></i>
-              <i class="devicon-css3-plain" title="CSS3"></i> -->
-              <i class="devicon-javascript-plain" title="Javascript"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="https://stevenkulp.github.io/Pong/" target="_blank">
+            <img src="assets/images/pong.gif" alt="">
+          </a>
+          <div class="project-text-container">
+            <a href="https://stevenkulp.github.io/Pong/" target="_blank"><h4>Pong</h4></a>
+            <p class="project-description">A remake of Pong, using HTML canvas methods and Javascript. As the game progresses, the paddles get smaller and the ball moves faster.</p>
+            <!-- <div class="project-tech-container">
+              <p>Technologies Used:
+                <i class="devicon-html5-plain" title="HTML5"></i>
+                <i class="devicon-css3-plain" title="CSS3"></i>
+                <i class="devicon-javascript-plain" title="Javascript"></i>
+              </p>
+            </div> -->
+            <span class="header-break-project-card"></span>
+            <div class="project-links-container">
+              <a href="https://stevenkulp.github.io/Pong/" target="_blank"><p>Demo</p></a>
+              <a href="https://github.com/stevenkulp/Pong" target="_blank"><p>Github</p></a>
             </div>
           </div>
         </div>
 
         <div class="project-card">
           <a href="https://stevenkulp.github.io/TicTacToe/" target="_blank">
-            <img src="assets/images/tictactoe.png" alt="">
+            <img src="assets/images/tictactoe.gif" alt="">
           </a>
           <div class="project-text-container">
             <a href="https://stevenkulp.github.io/TicTacToe/" target="_blank"><h4>Tic Tac Toe</h4></a>
             <p class="project-description">The classic game built using React.</p>
+            <!-- <div class="project-tech-container">
+                <i class="devicon-html5-plain" title="HTML5"></i><p>HTML5</p>
+                <i class="devicon-css3-plain" title="CSS3"></i><p>CSS3</p>
+                <i class="devicon-javascript-plain" title="Javascript"></i><p>Javscript</p>
+                <i class="devicon-react-original" title="React"></i><p>React</p>
+            </div> -->
             <span class="header-break-project-card"></span>
             <div class="project-links-container">
               <a href="https://stevenkulp.github.io/TicTacToe/" target="_blank"><p>Demo</p></a>
               <a href="https://github.com/stevenkulp/TicTacToe" target="_blank"><p>Github</p></a>
-              <!-- <i class="devicon-html5-plain" title="HTML5"></i>
-              <i class="devicon-css3-plain" title="CSS3"></i> -->
-              <i class="devicon-javascript-plain" title="Javascript"></i>
-              <i class="devicon-react-original" title="React"></i>
             </div>
           </div>
         </div>
@@ -273,7 +308,7 @@
     <div class="contact-wrapper">
       <h1>Contact</h1>
       <span class="header-break"></span>
-      <p id="contact-description">Want to get in touch? Feel free to reach out using a method below.</p>
+      <!-- <p id="contact-description">Want to get in touch? Feel free to reach out using a method below.</p> -->
 
       <div class="contact-links">
         <a href="mailto:sdkulp@gmail.com"><p class="contact-button">Email</p></a>
