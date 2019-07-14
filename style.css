@@ -75,10 +75,16 @@ section:last-child {
   padding: 2rem;
 }
 
+.diamond-container-three {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto -2rem;
+}
+
 .diamond-container {
   display: flex;
   flex-direction: row;
-  margin: auto;
+  margin-top: 1rem;
 }
 
 .diamond {
@@ -90,7 +96,7 @@ section:last-child {
   top: -8px;
   justify-content: center;
   text-align: center;
-  margin: 20px 6px 20px 6px;
+  margin: 20px 6px;
   opacity: 0.16;
 }
 
@@ -480,8 +486,8 @@ a #landing-arrow  {
   width: 2rem;
   height: 2rem;
   margin-left: -1rem;
-  border-left: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: chevron-animation 2.5s infinite;
@@ -504,8 +510,8 @@ a #landing-arrow  {
   20% {
     -webkit-transform: rotate(-45deg) translate(-8px, 8px);
     transition: 2.5s ease-in-out;
-    border-left: 4px solid #BAC6FF;
-    border-bottom: 4px solid #BAC6FF;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
   }
   40% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -518,8 +524,8 @@ a #landing-arrow  {
   20% {
     transform: rotate(-45deg) translate(-8px, 8px);
     transition-timing-function: 2.5s ease-in-out;
-    border-left: 4px solid #BAC6FF;
-    border-bottom: 4px solid #BAC6FF;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
   }
   40% {
     transform: rotate(-45deg) translate(0, 0);
@@ -527,7 +533,7 @@ a #landing-arrow  {
 }
 
 
-/* a #landing-arrow-circle  {
+a #landing-arrow-circle  {
   position: absolute;
   left: 50%;
   width: 2rem;
@@ -544,7 +550,7 @@ a #landing-arrow  {
     opacity: 0;
   }
   20% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   50% {
     box-shadow: 0 0 0 3rem rgba(255,255,255,0.08);
@@ -560,7 +566,7 @@ a #landing-arrow  {
     opacity: 0;
   }
   20% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   50% {
     box-shadow: 0 0 0 3rem rgba(255,255,255,0.08);
@@ -569,7 +575,7 @@ a #landing-arrow  {
   100% {
     opacity: 0;
   }
-} */
+}
 
 @media only screen and (max-width: 58rem) {
   .container {
@@ -621,8 +627,8 @@ a #landing-arrow  {
 }
 
 #about-description {
-  padding: 0 5rem;
-  margin: 2rem 0 2rem 0;
+  padding: 0 8rem;
+  margin: 2rem 0;
   text-align: justify;
   font-size: 12pt;
   opacity: 0.7;
@@ -657,6 +663,7 @@ a #landing-arrow  {
   font-size: 11pt;
   text-align: justify;
   opacity: 0.5;
+  margin-bottom: 0rem;
 }
 
 .technologies {
@@ -664,7 +671,7 @@ a #landing-arrow  {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0;
   text-align: left;
 }
 
@@ -704,6 +711,7 @@ a #landing-arrow  {
   padding: 1rem;
   border: 1px solid grey;
   border-width: 1px 0 0 0;
+  width: 22rem;
 }
 
 
@@ -727,31 +735,34 @@ a #landing-arrow  {
 .technologies-list p {
   margin: 4px;
   padding: 4px 0px;
-  font-size: 10pt;
+  font-size: 11pt;
   font-weight: bold;
   color: black;
   opacity: 0.8;
 }
 
 .technologies-list-half p {
-  margin: 4px 18px;
+  margin: 4px;
   opacity: 0.8;
   padding: 4px 0px;
-  font-size: 10pt;
+  font-size: 11pt;
   font-weight: bold;
   color: black;
   opacity: 0.8;
 }
 
 .technologies-list i {
-  margin-right: 8px;
-  font-size: 14pt;
+  margin-right: -3rem;
+  font-size: 15pt;
   opacity: 0.8;
+  margin-top: 0.5rem;
 }
+
 .technologies-list-half i {
-  margin-right: 8px;
-  font-size: 14pt;
+  margin-right: -2rem;
+  font-size: 15pt;
   opacity: 0.8;
+  margin-top: 0.5rem;
 }
 
 #technologies-diamond {
@@ -875,7 +886,7 @@ a #landing-arrow  {
 
 #projects .container{
   width: 100vw;
-  /* background: url("assets/images/projbg.jpg") no-repeat; */
+  background: url("assets/images/projbg.jpg") no-repeat;
   background: transparent;
   background-size: 100vw;
   margin: -7.5rem auto -2rem auto;
@@ -964,28 +975,32 @@ a #landing-arrow  {
 .project-links-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
 }
 
-.project-links-container p {
+.project-links-container a {
   margin-top: 1rem;
   margin-right: 0.5rem;
   padding: 12px 20px;
-  background-color: #3e3d56;
-  color: white;
+  width: 200px;
+  background-color: lightgrey;
+  color: black;
   border-radius: 4px;
   flex: 1;
   width: auto;
 }
 
-.project-links-container p:hover {
-  background-color: #6c63ff
+.project-links-container a:hover {
+  background-color: #3e3d56;
+  color: white;
+
 }
 
-.project-links-container p:last-child {
+/* .project-links-container p:last-child {
   margin-right: 1rem;
-}
+} */
 
 .project-tech-container img {
   padding-top: 1rem;
