@@ -20,6 +20,7 @@ html {
   font-family: 'Nunito', sans-serif;
   /* font-family: 'Open Sans', sans-serif; */
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -681,7 +682,7 @@ a #landing-arrow-circle  {
   z-index: 4;
   margin: 8px 8px -12px 8px;
   padding: 0 14px;
-  background: #f2f2f2; /* MAKE SURE THIS IS THE SAME AS SECTION BG COLOR */
+  background: #f2f2f2;
   font-size: 12pt;
   font-weight: bold;
   text-transform: uppercase;
@@ -713,7 +714,6 @@ a #landing-arrow-circle  {
   border-width: 1px 0 0 0;
   width: 22rem;
 }
-
 
 
 .technologies-divider {
@@ -785,8 +785,6 @@ a #landing-arrow-circle  {
   color: white;
 }
 
-
-
 @media only screen and (max-width: 58rem) {
   #about .container {
     padding-top: 2rem;
@@ -814,6 +812,7 @@ a #landing-arrow-circle  {
 
   .principles {
     padding: 0;
+    margin-bottom: 5rem;
   }
 
   .principle-item {
@@ -842,40 +841,31 @@ a #landing-arrow-circle  {
     font-size: 4vw;
   }
 
-  .technologies-list {
-    /* flex-direction: column; */
-    width: 70vw;
-    text-align: left;
-    margin: auto;
-    padding: 1.5rem 1rem 1rem 1rem;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
+  #technologies-diamond {
+    display: none;
   }
 
-  .technologies-list p {
-    margin: 5px;
-    font-size: 3vw;
-    font-weight: bold;
-    color: black;
-    opacity: 0.7;
+  .technologies-divider {
+    flex-direction: column;
   }
 
-  .technologies-list i {
-    margin-right: 8px;
-    font-size: 14pt;
-    opacity: 0.8;
+  .technologies h4 {
+    margin: 8px;
+    padding: 0 14px;
   }
 
   .technologies-list {
-    /* flex-direction: column; */
-    width: 70vw;
-    text-align: left;
-    margin: auto;
-    padding: 1.5rem 1rem 1rem 1rem;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
+    border: none;
+    margin-bottom: 3rem;
   }
 
+  .technologies-list-half {
+    border: none;
+  }
+
+  #resume-button {
+    margin: 4rem auto 4rem;
+  }
 }
 
 
@@ -955,11 +945,12 @@ a #landing-arrow-circle  {
   font-size: 24pt;
   /* text-shadow: 1px 1px grey; */
   /* color: #6c63ff; */
-  color: black;
+  font-weight: 800;
   margin-bottom: 0.5rem;
   margin-top: -0.5rem;
-  opacity: 0.8;
   /* letter-spacing: 2px; */
+  text-shadow: 1px 1px grey;
+  color: #6c63ff;
 }
 
 .project-description {
@@ -985,15 +976,16 @@ a #landing-arrow-circle  {
   margin-right: 0.5rem;
   padding: 12px 20px;
   width: 200px;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   color: black;
+  font-weight: bold;
   border-radius: 4px;
   flex: 1;
   width: auto;
 }
 
 .project-links-container a:hover {
-  background-color: #3e3d56;
+  background-color: #6c63ff;
   color: white;
 
 }
@@ -1013,6 +1005,7 @@ a #landing-arrow-circle  {
 @media only screen and (max-width: 58rem) {
   #projects .container{
     margin: auto;
+    width: 100vw;
   }
 
   #projects-description {
@@ -1020,7 +1013,7 @@ a #landing-arrow-circle  {
   }
   .project-card {
     margin: 5rem;
-    width: 85vw;
+    width: 100vw;
   }
 
   #projects img {
@@ -1029,7 +1022,6 @@ a #landing-arrow-circle  {
   }
 
   .project-text-container {
-    border-top: 4px solid #000;
     width: 85vw;
   }
 
@@ -1042,7 +1034,7 @@ a #landing-arrow-circle  {
   }
 
   #projects .header-break-project-card {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 
 
@@ -1051,16 +1043,14 @@ a #landing-arrow-circle  {
     justify-content: space-between;
   }
 
-
-
   .project-links-container p:last-child {
     margin-right: 0rem;
   }
 
   .project-links-container p {
-    width: 36vw;
-
+    width: auto;
   }
+
   .project-links-container #permitdocs  {
     /* width: 77vw; */
   }
@@ -1086,16 +1076,6 @@ a #landing-arrow-circle  {
   background-color: #f2f2f2;
   border-radius: 5px;
 }
-
-@media only screen and (max-width: 58rem) {
-  .contact-wrapper {
-    min-width: 100vw;
-    border-radius: 0px;
-  }
-
-}
-
-
 
 #contact .header-break {
   background: #000;
@@ -1174,6 +1154,26 @@ input[type=submit]:hover {
   background-color: #6c63ff;
 }
 
+
+@media only screen and (max-width: 58rem) {
+  .contact-wrapper {
+    min-width: 100vw;
+    border-radius: 0px;
+  }
+  #input-name-email-container {
+    flex-direction: column;
+  }
+
+  #input-name, #input-email {
+    width: auto;
+  }
+
+  .contact-button {
+    width: 19vw;
+  }
+
+}
+
 /* ----------------------- */
 /*      FOOTER SECTION     */
 /* ----------------------- */
@@ -1187,4 +1187,9 @@ footer p {
   height: auto;
   color: #ccc;
   padding: 0.5rem;
+}
+
+@media only screen and (max-width: 58rem) {
+  footer p {
+    visibility: hidden;
 }
