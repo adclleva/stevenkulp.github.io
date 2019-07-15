@@ -876,14 +876,14 @@ a #landing-arrow-circle  {
 
 #projects .container{
   width: 100vw;
-  background: url("assets/images/projbg.jpg") no-repeat;
+  /* background: url("assets/images/projbg.jpg") ; */
   background: transparent;
   background-size: 100vw;
   margin: -7.5rem auto -2rem auto;
 }
 
 #projects h1 {
-  color: white;
+  color: #fff;
   padding-top: 2rem;
 }
 
