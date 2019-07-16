@@ -18,9 +18,7 @@ h1, h2, h3, h4, h5, h6, a, i, img, footer {
 html {
   font-size: 10pt;
   font-family: 'Nunito', sans-serif;
-  /* font-family: 'Open Sans', sans-serif; */
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -36,9 +34,6 @@ h1 {
   letter-spacing: 0.3rem;
   font-weight: 800;
   color: #202020;
-}
-
-h3 {
 }
 
 p {
@@ -128,20 +123,6 @@ section:last-child {
   background: #000;
 }
 
-/* #separator {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-}
-
-.header-break-section {
-  width: 70rem;
-  background: #fff;
-} */
-
 @media only screen and (max-width: 58rem) {
   .container {
     width: 100vw;
@@ -154,6 +135,8 @@ section:last-child {
     font-size: 3.7rem;
   }
 }
+
+
 
 
 /* ------------------------- */
@@ -240,7 +223,6 @@ section:last-child {
   display: none;
 }
 
-
 @media only screen and (max-width: 74rem) {
   #nav-container {
     margin: 0 2.5rem;
@@ -252,8 +234,8 @@ section:last-child {
     height: 6rem;
     margin: auto;
     border-bottom: 2px inset #2C2B66;
-
   }
+
   #nav-container {
     width: 100vw;
     height: 6rem;
@@ -268,11 +250,6 @@ section:last-child {
   .nav-menu-desktop {
     display: none;
   }
-
-
-
-
-
 
   .nav-menu-mobile {
     display: flex;
@@ -304,7 +281,6 @@ section:last-child {
     justify-content: center;
   }
 
-  /* Hamburger Line */
   .nav-menu-mobile .hamburger > div {
     position: relative;
     flex: none;
@@ -317,7 +293,6 @@ section:last-child {
     transition: all 0.2s ease;
   }
 
-  /* Hamburger Lines - Top & Bottom */
   .nav-menu-mobile .hamburger > div::before,
   .nav-menu-mobile .hamburger > div::after {
     content: '';
@@ -329,25 +304,20 @@ section:last-child {
     background: inherit;
   }
 
-  /* Moves Line Down */
   .nav-menu-mobile .hamburger > div::after {
     top: 10px;
   }
 
-  /* Toggler Animation */
   .nav-menu-mobile #toggler:checked + .hamburger > div {
     transform: rotate(135deg);
   }
 
-  /* Turns Lines Into X */
   .nav-menu-mobile #toggler:checked + .hamburger > div:before,
   .nav-menu-mobile #toggler:checked + .hamburger > div:after {
     top: 0;
     transform: rotate(90deg);
   }
 
-
-  /* Show Menu */
   .nav-menu-mobile #toggler:checked ~ .menu {
     visibility: visible;
   }
@@ -414,13 +384,6 @@ section:last-child {
 
 
 
-
-
-
-
-
-
-
 /* ------------------------- */
 /*    BACKGROUND SECTION     */
 /* ------------------------- */
@@ -429,7 +392,6 @@ section:last-child {
   position: fixed;
   z-index: 1;
 }
-
 
 #mouse-draw {
   width: 5px;
@@ -482,7 +444,6 @@ section:last-child {
 a #landing-arrow  {
   margin-top: 2rem;
   position: absolute;
-  /* top: 0; */
   left: 50%;
   width: 2rem;
   height: 2rem;
@@ -493,16 +454,8 @@ a #landing-arrow  {
   transform: rotate(-45deg);
   -webkit-animation: chevron-animation 2.5s infinite;
   animation: chevron-animation 2.5s infinite;
-
   box-sizing: border-box;
 }
-
-/* a #landing-arrow:hover {
-  transition: 0.25s ease-in-out;
-  border-left: 4px solid #BAC6FF;
-  border-bottom: 4px solid #BAC6FF;
-} */
-
 
 @-webkit-keyframes chevron-animation {
   0% {
@@ -532,7 +485,6 @@ a #landing-arrow  {
     transform: rotate(-45deg) translate(0, 0);
   }
 }
-
 
 a #landing-arrow-circle  {
   position: absolute;
@@ -585,13 +537,16 @@ a #landing-arrow-circle  {
     border-radius: 0px;
     padding: 0;
   }
+
   #landing-container {
     margin-top: 16vh;
     padding: 0;
   }
+
   #landing-container h1 {
     font-size: 11vw;
   }
+
   #landing-container h3 {
     font-size: 2.78vw;
   }
@@ -605,10 +560,13 @@ a #landing-arrow-circle  {
   #landing-container h1 {
     font-size: 12.5vw;
   }
+
   #landing-container h3 {
     font-size: 3.15vw;
   }
 }
+
+
 
 
 /* ------------------------- */
@@ -650,7 +608,6 @@ a #landing-arrow-circle  {
 .principle-item img {
   height: 11rem;
   width: 11rem;
-  /* border: 1px solid pink; */
 }
 
 .principle-item h3 {
@@ -714,7 +671,6 @@ a #landing-arrow-circle  {
   border-width: 1px 0 0 0;
   width: 22rem;
 }
-
 
 .technologies-divider {
   margin: -2rem auto auto auto;
@@ -804,7 +760,6 @@ a #landing-arrow-circle  {
     opacity: 0.5;
   }
 
-
   .diamond-mobile {
     visibility: visible;
     margin-bottom: -1rem;
@@ -867,6 +822,7 @@ a #landing-arrow-circle  {
     margin: 4rem auto 4rem;
   }
 }
+
 
 
 
@@ -938,18 +894,11 @@ a #landing-arrow-circle  {
   margin-bottom: -0.5rem;
 }
 
-/* #projects #permitdocs-img img {
-  height: 270px;
-} */
 #projects h4 {
   font-size: 24pt;
-  /* text-shadow: 1px 1px grey; */
-  /* color: #6c63ff; */
   font-weight: 800;
   margin-bottom: 0.5rem;
   margin-top: -0.5rem;
-  /* letter-spacing: 2px; */
-  text-shadow: 1px 1px grey;
   color: #6c63ff;
 }
 
@@ -976,7 +925,6 @@ a #landing-arrow-circle  {
   margin-right: 0.5rem;
   padding: 12px 20px;
   width: 200px;
-  /* background-color: lightgrey; */
   color: black;
   font-weight: bold;
   border-radius: 4px;
@@ -987,12 +935,7 @@ a #landing-arrow-circle  {
 .project-links-container a:hover {
   background-color: #6c63ff;
   color: white;
-
 }
-
-/* .project-links-container p:last-child {
-  margin-right: 1rem;
-} */
 
 .project-tech-container img {
   padding-top: 1rem;
@@ -1011,6 +954,7 @@ a #landing-arrow-circle  {
   #projects-description {
     font-size: 14pt;
   }
+
   .project-card {
     margin: 5rem;
     width: 100vw;
@@ -1033,11 +977,6 @@ a #landing-arrow-circle  {
     font-size: 16pt;
   }
 
-  #projects .header-break-project-card {
-    /* margin-top: 2rem; */
-  }
-
-
   .project-links-container {
     text-align: center;
     justify-content: space-between;
@@ -1051,13 +990,11 @@ a #landing-arrow-circle  {
     width: auto;
   }
 
-  .project-links-container #permitdocs  {
-    /* width: 77vw; */
-  }
   .project-links-container i {
     display: none;
   }
 }
+
 
 
 
@@ -1154,12 +1091,12 @@ input[type=submit]:hover {
   background-color: #6c63ff;
 }
 
-
 @media only screen and (max-width: 58rem) {
   .contact-wrapper {
     min-width: 100vw;
     border-radius: 0px;
   }
+
   #input-name-email-container {
     flex-direction: column;
   }
@@ -1171,8 +1108,10 @@ input[type=submit]:hover {
   .contact-button {
     width: 19vw;
   }
-
 }
+
+
+
 
 /* ----------------------- */
 /*      FOOTER SECTION     */
